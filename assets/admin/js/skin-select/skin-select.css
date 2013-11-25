@@ -1,0 +1,109 @@
+
+/* SKIN SELECT */
+ #skin-select h3, #skin-select h4 {
+    font-family:'Lato', sans-serif;
+}
+#menu-showhide {
+    margin: 0;
+}
+#skin-select {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 100%;
+    position: fixed;
+    top: 66px !important;
+    width: 250px;
+    z-index: 1000;
+}
+#skin-select #toggle {
+    position:absolute;
+    top:5px;
+    right:1px;
+    display:block;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    background: #6ADAE4 url(img/style-toggle.png) 0 0 no-repeat;
+    background-position: -5px -5px;
+    border-radius: 0 ;
+}
+#skin-select #toggle.active {
+    background-position: -5px -45px;
+    height: 30px;
+    left: 220px;
+    position: absolute;
+    top: 5px;
+    width: 30px;
+    border-radius: 0;
+}
+#skin-select li {
+    font-size: 20px;
+    line-height: 0;
+    list-style: none outside none;
+    margin: 0;
+    text-align: left;
+    border-top: 1px solid #E0E7EF;
+}
+#skin-select li span {
+    font-size: 14px;
+    left: 10px;
+    position: relative;
+}
+.menu-hide span {
+    color: red;
+}
+#skin-select li ul li {
+    line-height: 20px;
+}
+#skin-select li i {
+    font-size: 18px;
+    font-style: normal;
+    left: -5px;
+    line-height: 15px;
+    position: relative;
+}
+#skin-select li ul li i {
+    font-size: 16px;
+    font-style: normal;
+    left: -2px;
+    line-height: 10px;
+    position: relative;
+}
+/* #skin-select ul { margin:0; padding:0; list-style:none; }
+#skin-select ul li { display:inline-block; margin-right:1px; margin-bottom:4px; }
+#skin-select ul li a { padding: 4px 6px; font-family:Tahoma, "Times New Roman", Times, serif; font-size:11px; text-shadow:none; color:#000; background:#eee; border:1px solid rgba(0,0,0,.2) }
+#skin-select ul li a.active, #skin-select ul li a.active:hover { background-color:#fff; outline:2px solid #000; border-color:transparent; }
+#skin-select ul li a:hover { text-decoration:none; background:#e3e3e3; } 
+
+#skin-select .colors li { margin-bottom:0; }
+#skin-select .colors a { display:block; width:4px; height:6px; line-height:100%; border:1px solid rgba(0,0,0,.2); }
+#skin-select .colors a:hover { outline:2px solid #ccc; }
+ */
+ .skin-part {
+      border-right: 1px solid #E0E7EF;
+    padding: 0;
+    position: relative;
+    top: -25px;
+}
+.skin-part h3 {
+    color:#000;
+    text-shadow:none;
+    margin-bottom:10px;
+}
+.skin-part h3 small {
+    margin-left:6px;
+    color:#999;
+}
+.skin-part h4 {
+    font-size:1em;
+    margin:4px 0;
+}
+@media screen and (max-height: 800px) {
+    #skin-select {
+        top: 0px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #skin-select {
+        top: 0px;
+    }
+}

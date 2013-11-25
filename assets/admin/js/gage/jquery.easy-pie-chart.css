@@ -1,0 +1,100 @@
+
+.chart {
+     display: inline-block;
+    height: 110px;
+    margin-bottom: 75px;
+    margin-top: 15px;
+    padding-bottom: 27px;
+    position: relative;
+    text-align: center;
+    width: 110px;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+}
+.percent:after {
+  content: 'Percent';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+
+
+.chart2 {
+   display: inline-block;
+    height: 110px;
+    margin-bottom: 75px;
+    margin-top: 15px;
+    padding-bottom: 27px;
+    position: relative;
+    text-align: center;
+    width: 110px;
+}
+.chart2 canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent2 {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+}
+
+.percent2:after {
+  content: 'Visitor';
+  margin-left: 0.1em;
+  font-size: .8em;
+} 
+
+.chart3 {
+   display: inline-block;
+    height: 110px;
+    margin-bottom: 75px;
+    margin-top: 15px;
+    padding-bottom: 27px;
+    position: relative;
+    text-align: center;
+    width: 110px;
+}
+.chart3 canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent3 {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+}
+
+.percent3:after {
+  content: 'Views';
+  margin-left: 0.1em;
+  font-size: .8em;
+} 
+
+
+.percentage, .label {
+     color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 100;
+    padding: 8px;
+    text-align: center;
+}
+
+
+.angular {
+  margin-top: 100px;
+}
+.angular .chart {
+  margin-top: 0;
+}
+
+

@@ -1,0 +1,41 @@
+body{
+    color:#2B2B2B;
+	font-family: 'trebuchet MS' , 'Lucida sans' , Arial;
+}
+
+    body.dark {
+        background: #444;
+        color:#ffd;
+    }
+	
+.demo-container {
+	margin:10px;
+}
+
+code {
+    background: #ddd;
+    padding:2px 5px;
+}
+
+.status-metro {
+       border-radius: 3px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 2px 5px;
+}
+
+.status-metro.status-active {
+    background: #1ABC9C;
+}
+
+.status-metro.status-disabled {
+    background: #999999;
+}
+
+.status-metro.status-suspended {
+    background: #FF0064;
+}
+
+.foo-setup li {
+	margin-bottom:30px;
+}
