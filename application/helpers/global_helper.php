@@ -24,8 +24,7 @@ function checkRemoteFile($url) {
 function loadAssets($method = NULL) {
     //força o carregamento da instância do CI
     $ci = & get_instance();
-
-    //carrega a biblioteca da cdn
+    
     $ci->load->config('assets');
 
     $metaData = [
@@ -39,7 +38,6 @@ function loadPlugins($metaData, $method = NULL) {
     //força o carregamento da instância do CI
     $ci = & get_instance();
 
-    //carrega a biblioteca da cdn
     $ci->load->config('assets');
 
     $cssPlugin = $ci->config->item('cssPlugins' . $method);

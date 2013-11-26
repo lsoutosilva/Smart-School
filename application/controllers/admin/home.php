@@ -17,12 +17,13 @@ class Home extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->helper('url');
-       // $this->meta = loadAssets('Admin');
-     //   $this->meta = loadPlugins($this->meta);
+        $this->meta = loadAssets('Admin');
+        $this->meta = loadPlugins($this->meta);
     }
 
     public function index() {
-        $this->data['topo'] = $this->load->view('admin/topo');
+        $this->data['base'] = $this->load->view('admin/base',  $this->meta, true);
+        $this->data['footer'] = $this->load->view('admin/footer',  $this->meta, true);
         $this->load->view('admin/home', $this->data);
     }
 
