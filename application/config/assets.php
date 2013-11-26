@@ -3,7 +3,11 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 //base de carregamento de arquivos CSS
-$config['css'] = [];
+$config['css'] = [
+     '/assets/admin/css/loader-style',
+    '/assets/admin/js/iCheck/flat/all.css',
+    '/assets/admin/js/iCheck/line/all.css'
+];
 
 //iniciados no footer das páginas
 $config['js'] = [];

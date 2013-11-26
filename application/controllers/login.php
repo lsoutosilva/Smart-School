@@ -4,16 +4,22 @@ if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
 class Login extends CI_Controller {
+    
+    private $data = [];
+    public $meta = [];
 
     function __construct() {
         parent::__construct();
         $this->load->helper('url');
         $this->load->model('m_usuarios');
-        $this->meta = loadAssets('Admin');
+        $this->meta = loadAssets();
         $this->meta = loadPlugins($this->meta);
     }
 
     function index() {
+        
+        $this->data['base'] = $this->load->view('base',  $this->meta, true);
+        $this->data['footer'] = $this->load->view('footer',  $this->meta, true);
 
         // VALIDATION RULES
         $this->load->library('form_validation');
@@ -28,7 +34,7 @@ class Login extends CI_Controller {
 
         if ($this->form_validation->run() == FALSE) {
 
-            $this->load->view('login_view');
+            $this->load->view('login_view', $this->data);
         } else {
             if ($query) { // VERIFICA LOGIN E SENHA
                 $data = array(

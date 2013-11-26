@@ -1,35 +1,49 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Área Restrita</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <style type="text/css">
-            body {background: #FFF; font-family: Verdana; font-size: 9pt; }
-            #form_login { width: 500px; margin: 0 auto; padding: 20px; background: #F2F2F2; border: 1px solid #B7B7B7; }
-            label { display: block; margin-bottom: 0.3em; }
-            input[type=text], input[type=password] { border: 1px solid #666; display: block; margin-bottom: 1em; padding: 2px; width: 100%; }
-            input[type=text], input[type=password] { display: block; }
-            h1 { margin: 0 0 1em 0; text-align: center; }
-            .error { background: none repeat scroll 0 0 #FBE6F2; border: 1px solid #D893A1; padding: 5px; }
-        </style>
-    </head>
-    <body>
+<?= $base ?>
 
-        <h1>Tela de Login</h1>
-        <div id="form_login">
-            <?php echo validation_errors(); ?>
-            <?php
-            echo form_open(base_url('login'));
+<!--  CONTENT -->
 
-            echo form_label('Username', 'username');
-            echo form_input('username', '');
 
-            echo form_label('Password', 'password');
-            echo form_password('password', '');
+<div class="container-fluid">
 
-            echo form_submit('submit', 'Entrar no sistema');
-            ?>
-            <?php form_close(); ?>
+    <div class="row-fluid">
+
+
+        <div class="span4 offset4">
+            <div style="margin:0 auto;">
+                <div class="login"><a href="#" class="brand">The<span>Vira</span><i>v1.0</i></a>
+                </div>
+            </div>
+
+
+            <!-- LABEL -->
+            <div class="wrap-login">
+                <div class="nest">
+                    <div class="body-nest">
+                        <?= validation_errors(); ?>
+                        <div class="logo-login">
+                            <span class="entypo-key"></span>
+                        </div>
+                        <?php
+                            echo form_open(base_url('login'));
+
+                            echo form_input(['type' => 'text', 'name' => 'username', 'class' => 'text-center input-block-level', 'placeholder' => "Usuário"]);
+
+                            echo form_input(['type' => 'password', 'name' => 'password', 'class' => 'text-center input-block-level', 'placeholder' => "Senha"]);
+
+                            $submit = Array("name" => "submit", "value" => "Entrar", "class" => "btn btn-block btn-primary btn-large tooltip-tip");
+
+                            echo form_submit($submit);
+
+                            form_close();
+                        ?>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
-</html>
+    </div>
+
+
+
+
+</div>
+<?= $footer?>
