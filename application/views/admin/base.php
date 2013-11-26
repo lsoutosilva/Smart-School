@@ -74,7 +74,7 @@
                             <li style="margin-top:8px;margin-right:5px;">
                                 <div class="btn-group">
                                     <a class="btn btn-inverse" href="#">
-                                        <span class="entypo-user"></span>&#160;Peter Parker</a>
+                                        <span class="entypo-user"></span>&#160;<?= $this->session->userdata('username')?></a>
                                     <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#">
                                         <span class="entypo-cog"></span>
                                     </a>
@@ -94,8 +94,9 @@
                                         </li>
                                         <li class="divider"></li>
                                         <li>
-                                            <a href="#">
-                                                <span class="entypo-logout"></span>&#160;Logout</a>
+                                            <a href="<?php echo base_url('login/logout')?>">
+                                                <span class="entypo-logout"></span>&#160;Logout
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -145,13 +146,7 @@
 
 
             <li class="datepicker-wrap">
-
-                <div id="reportrange" class="nav-date-picker">
-                    <i class="datepicker-headline entypo-clock">  &#160;History</i>
-                    <span></span>&#160;<b class="entypo-down-dir"></b>
-                </div>
-
-
+               <?= date('l jS \of F Y h:i:s A');?>
             </li>
         </ul>
         <!-- /breadcrumb-->

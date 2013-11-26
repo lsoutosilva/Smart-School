@@ -8,9 +8,7 @@
         <div class="row-fluid">
 
             <div class="span8">
-                <h2 class="tittle-content-header">Dashboard
-                    <span>Common UI features & Elements</span>
-                </h2>
+                <h2 class="tittle-content-header">Dashboard</h2>
             </div>
 
             <div class="span4">
@@ -28,7 +26,7 @@
                 <span class="entypo-cancel-squared"></span>
             </button>
             <span style="font-size:20px;" class="fontelico-emo-beer"></span>
-            <strong>&#160;&#160;Hello there.....!</strong>&#160;wellcome to THE VIRA admin template, please enjoy &#160;
+            <strong>&#160;Hello there.....!</strong>&#160;wellcome to School Connected, please enjoy &#160;
             <span class="fontelico-emo-happy"></span>
         </div>
 
