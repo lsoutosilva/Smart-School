@@ -35,6 +35,19 @@ class m_Usuarios extends CI_Model {
             die();
         }
     }
+    
+    public function listUser($user){
+        
+        $where = ['login' => $user];
+
+        $this->db->select('*');
+        $this->db->from('usuarios');
+        $this->db->where($where);
+        $query = $this->db->get();
+        
+        return $query->result();
+        
+    }
 
 }
 

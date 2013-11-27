@@ -166,18 +166,22 @@
                                     </div>
                                 </div>
                             </div>
-                        <?php endforeach; ?>
+                        <?php endforeach; 
+                        if(($usuario[0]->level) == 1):
+                        ?>
                         <div class="message-form">
                             <div class="row-fluid">
-                                
+                                <?= form_open(base_url('admin/home'));?>
                                 <div class="span10">
-                                    <input type="text" placeholder="Type a message..." class="span12">
+                                    <?=form_input(['type' => 'text', 'name' => 'avisos_text', 'class' => 'span12', 'placeholder' => "Insira a mensagem..."]);?>
                                 </div>
                                 <div class="span2">
-                                    <button class="btn btn-block btn-danger" type="button">Send</button>
+                                    <?=form_submit(["name" => "enviar", "value" => "Enviar", 'class' => 'btn btn-block btn-danger']);?>
                                 </div>
+                            <?php form_close();?>
                             </div>
                         </div>
+                        <?php endif;?>
                     </div>
                 </div>
                 <!-- /LABEL -->

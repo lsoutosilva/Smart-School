@@ -74,7 +74,7 @@
                             <li style="margin-top:8px;margin-right:5px;">
                                 <div class="btn-group">
                                     <a class="btn btn-inverse" href="#">
-                                        <span class="entypo-user"></span>&#160;<?= $this->session->userdata('username')?></a>
+                                        <span class="entypo-user"></span>&#160;<?= $this->session->userdata('username') ?></a>
                                     <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#">
                                         <span class="entypo-cog"></span>
                                     </a>
@@ -94,7 +94,7 @@
                                         </li>
                                         <li class="divider"></li>
                                         <li>
-                                            <a href="<?php echo base_url('login/logout')?>">
+                                            <a href="<?php echo base_url('login/logout') ?>">
                                                 <span class="entypo-logout"></span>&#160;Logout
                                             </a>
                                         </li>
@@ -146,7 +146,7 @@
 
 
             <li class="datepicker-wrap">
-               <?= date('l jS \of F Y h:i:s A');?>
+                <?= date('l jS \of F Y h:i:s A'); ?>
             </li>
         </ul>
         <!-- /breadcrumb-->
@@ -169,7 +169,7 @@
 
                             <ul id="menu-showhide" class="topnav">
                                 <li>
-                                    <a class="tooltip-tip" href="dashboard.html" title="Dashboard">
+                                    <a class="tooltip-tip" href="<?= base_url('admin/home') ?>" title="Dashboard">
                                         <i class="icon-menu fa fa-laptop fa-lg"></i>
                                         <!--   <img src="assets/img/icons/graphic-design.png" class="" alt=""> -->
                                         <span>Dashboard</span>
@@ -177,15 +177,16 @@
 
                                 </li>
                                 <li>
-                                    <a class="tooltip-tip" href="#" title="UI Element">
-                                        <i class="icon-menu fa fa-flask fa-lg"></i>
-                                        <span>UI Element</span>
+                                    <a class="tooltip-tip" href="#" title="Aluno">
+                                        <i class="icon-menu entypo-github"></i>
+                                        <span>Aluno</span>
                                     </a>
                                     <ul>
                                         <li class="active">
-                                            <a class="tooltip-tip2" href="element.html" title="Element"><i class="entypo-attach"></i><span>Element</span></a>
+                                            <a class="tooltip-tip2" href="<?= base_url('admin/aluno/listAluno') ?>" title="Lista"><i class="entypo-doc-text"></i><span>Lista</span></a>
                                         </li>
-                                        <li><a class="tooltip-tip2" href="button.html" title="Button"><i class="entypo-keyboard"></i><span>Button</span></a>
+                                      <!--  <li>
+                                            <a class="tooltip-tip2" href="button.html" title="Button"><i class="entypo-keyboard"></i><span>Button</span></a>
                                         </li>
                                         <li>
                                             <a class="tooltip-tip2" href="accordion.html" title="Tab & Accordion"><i class="entypo-plus-squared"></i><span>Tab & Accordion</span></a>
@@ -202,7 +203,7 @@
 
                                     </ul>
                                 </li>
-                                <li>
+                               <!-- <li>
                                     <a class="tooltip-tip" href="#" title="Form">
                                         <i class="icon-menu fa fa-paste fa-lg"></i>
                                         <span>Form</span>
@@ -262,7 +263,7 @@
                                         </li>
 
                                     </ul>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>

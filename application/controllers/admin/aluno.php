@@ -6,7 +6,7 @@ if (!defined('BASEPATH'))
 /**
  * Home
  */
-class Home extends CI_Controller {
+class Aluno extends CI_Controller {
 
     private $data = [];
     public $meta = [];
@@ -22,21 +22,8 @@ class Home extends CI_Controller {
         $this->load->model(['m_posts', 'm_usuarios']);
     }
 
-    public function index() {
+    public function listAluno() {
         
-         // VALIDATION RULES
-        $this->load->library('form_validation');
-        $this->form_validation->set_rules('avisos_text', 'avisos_text', 'required');
-        $this->form_validation->set_error_delimiters('<p class="error">', '</p>');
-        
-        $this->data['usuario'] = $this->m_usuarios->listUser($this->session->userdata('username'));
-        
-         if ($this->form_validation->run() == TRUE) {
-             
-             $this->m_posts->insertPostAvisos($this->input->post('avisos_text'), $this->data['usuario'][0]->id_usuario);
-        } 
-
-        $this->data['posts'] = $this->m_posts->listPostsHome();
         
         // Carrega a view
         $this->data['base'] = $this->load->view('admin/base',  $this->meta, true);
