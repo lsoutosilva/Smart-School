@@ -1,5 +1,7 @@
 $('.textarea').wysihtml5();
 
+$('.alert-success').fadeOut(6000);
+
  var g1, g2, g3;
 
     window.onload = function() {
