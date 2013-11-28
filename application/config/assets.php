@@ -15,6 +15,11 @@ $config['js'] = [];
 $config['jsAdmin'] = [
     '/assets/admin/js/load',
     '/assets/admin/js/main',
+    '/assets/admin/js/dataTable/lib/lodash/lodash.min',
+    '/assets/admin/js/dataTable/lib/jquery.dataTables/js/jquery.dataTables.min',
+    '/assets/admin/js/dataTable/lib/jquery.dataTables/js/DT_bootstrap',
+    '/assets/admin/js/dataTable/js/datatables.responsive',
+    '/assets/admin/js/dataTable/js/dom-bootstrap',
     '/assets/admin/js/gage/raphael.2.1.0.min',
     '/assets/admin/js/gage/justgage',
     '/assets/admin/js/chart/jquery.flot',
@@ -38,12 +43,16 @@ $config['jsAdmin'] = [
     '/assets/admin/js/textEditor/lib/js/wysihtml5-0.3.0',
     '/assets/admin/js/textEditor/lib/js/prettify',
     '/assets/admin/js/textEditor/src/bootstrap-wysihtml5',
-    '/assets/admin/js/base'
+    '/assets/admin/js/base',
     
 ];
 
 $config['cssAdmin'] = [
     '/assets/admin/css/loader-style',
     '/assets/admin/js/calendar/css/calendar',
-    '/assets/admin/js/textEditor/src/bootstrap-wysihtml5'
+    '/assets/admin/js/textEditor/src/bootstrap-wysihtml5',
+    '/assets/admin/js/dataTable/css/datatables.responsive',
+    '/assets/admin/js/dataTable/lib/jquery.dataTables/css/DT_bootstrap',
+    '/assets/admin/js/footable/css/footable.standalone',
+    '/assets/admin/js/footable/css/footable-demos'
 ];

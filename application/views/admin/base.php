@@ -8,13 +8,12 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <!-- Le styles -->
-
-
         <?php
         foreach ($css as $cssFile) {
             echo '<link rel="stylesheet" href="' . $cssFile . '.css">' . PHP_EOL;
         }
         ?>
+        <link href="<?=  base_url('/assets/admin/js/footable/css/footable.core.css?v=2-0-1')?>" rel="stylesheet" type="text/css" />
 
 
         <style type="text/css">
@@ -53,7 +52,7 @@
             <![endif]-->
         <!-- Fav and touch icons -->
 
-        <link rel="shortcut icon" href="<?= base_url('assets/admin/ico/minus.png') ?>">
+        <link rel="shortcut icon" href="<?= base_url('/assets/admin/ico/minus.png') ?>">
     </head>
     <body>
         <!-- TOP NAVBAR -->

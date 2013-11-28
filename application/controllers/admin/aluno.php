@@ -19,16 +19,15 @@ class Aluno extends CI_Controller {
         $this->load->helper('url');
         $this->meta = loadAssets('Admin');
         $this->meta = loadPlugins($this->meta);
-        $this->load->model(['m_posts', 'm_usuarios']);
+        $this->load->model(['m_usuarios']);
     }
 
     public function listAluno() {
         
-        
         // Carrega a view
         $this->data['base'] = $this->load->view('admin/base',  $this->meta, true);
         $this->data['footer'] = $this->load->view('admin/footer',  $this->meta, true);
-        $this->load->view('admin/home', $this->data);
+        $this->load->view('admin/aluno_lista', $this->data);
     }
 
 }
